@@ -8,7 +8,7 @@ function DriverDetail() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5282/drivers/${id}`)
+    fetch(`https://f1-drivers-api.onrender.com/drivers/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error('Driver not found');

@@ -8,7 +8,7 @@ function DriversList() {
   const [sortOrder, setSortOrder] = useState('asc');
 
   useEffect(() => {
-    fetch('http://localhost:5282/drivers')
+    fetch('https://f1-drivers-api.onrender.com/drivers')
       .then((res) => res.json())
       .then((data) => setDrivers(data))
       .catch((err) => console.error('Error fetching drivers:', err));
