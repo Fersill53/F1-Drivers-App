@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
-import DriversList from './DriversList';
-import DriverDetail from './DriverDetail';
+import DriversList from './components/DriversList';
+import DriverDetail from './components/DriverDetail';
 
 function App() {
   return (

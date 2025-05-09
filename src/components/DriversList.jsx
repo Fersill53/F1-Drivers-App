@@ -8,7 +8,7 @@ function DriversList() {
   const [sortOrder, setSortOrder] = useState('asc');
 
   useEffect(() => {
-    fetch('https://f1-drivers-api.onrender.com/drivers')
+    fetch('f1-drivers-api-production.up.railway.app')
       .then((res) => res.json())
       .then((data) => setDrivers(data))
       .catch((err) => console.error('Error fetching drivers:', err));
