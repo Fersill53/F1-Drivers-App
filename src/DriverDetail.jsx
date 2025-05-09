@@ -11,7 +11,7 @@ function DriverDetail() {
     fetch(`https://f1-drivers-api.onrender.com/drivers/${id}`)
       .then((res) => {
         if (!res.ok) {
-          throw new Error('Driver not found');
+          throw new Error('Driver not found')
         }
         return res.json();
       })
