@@ -8,7 +8,7 @@ function DriverDetail() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`https://f1-drivers-api-production.up.railway.app/drivers${id}`)
+    fetch(`https://f1-drivers-api-production.up.railway.app/drivers/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error('Driver not found')
